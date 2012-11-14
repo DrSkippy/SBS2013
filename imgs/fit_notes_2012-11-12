@@ -1,0 +1,14 @@
+tail -n250 real_curves.csv | head -n70 | ./scale.py | ~/IdeaProjects/Social-Activity-Pulse-Function/src/fit.py -fgamma -l gammaFit -i3 -c4 -p[-0.1,2,2,0.1] | cut -d, -f1,2,6,7 >> real_curves.csv 
+
+
+#  x0=0.000000
+#  a=1.589879
+#  b=0.004835
+#  A0=0.099857
+#  tavg=0.007688   f(tavg)=66.771378i
+#  tpeak=0.002852   f(tpeak)=41.110730
+
+cat fake_curves.csv | grep disregard | ./scale.py  | ~/IdeaProjects/Social-Activity-Pulse-Function/src/fit.py -fgamma -l disregardFit -i3 -c4 -p[-0.1,2,2,0.1] | cut -d, -f1,2,6,7 > fake_curves_gamma.csv
+cat fake_curves.csv | grep restored | ./scale.py  | ~/IdeaProjects/Social-Activity-Pulse-Function/src/fit.py -fgamma -l restoredFit -i3 -c4 -p[-0.1,2,2,0.1] | cut -d, -f1,2,6,7 >> fake_curves_gamma.csv
+cat fake_curves.csv | grep fake | ./scale.py  | ~/IdeaProjects/Social-Activity-Pulse-Function/src/fit.py -fgamma -l fakeFit -i3 -c4 -p[-0.1,2,2,0.1] | cut -d, -f1,2,6,7 >> fake_curves_gamma.csv
+
