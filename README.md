@@ -1,7 +1,7 @@
-Defrag2012
+SMS2012
 ==========
 
-Presentation from Defrag 2012-11-12
+Presentation from  Social Media Summit, Austin, TX
 
 Requires beamer
 
