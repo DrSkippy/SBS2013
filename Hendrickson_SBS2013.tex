@@ -1,4 +1,4 @@
-% SMS2013 Presentation
+% SBS2013 Presentation
 %
 % Scott Hendrickson
 % @DrSkippy27
@@ -39,13 +39,13 @@
 
 \begin{frame}
 \begin{center}
-{\Huge Getting the right mix for data-driven social marketing}
+{\Huge getting the right mix \\ [5pt] for data-driven \\ [15pt] social marketing}
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-{\Huge why social media for breaking stories? }
+{\Huge why mix \\ [5pt] social media data? }
 \end{center}
 \end{frame}
 
@@ -53,29 +53,29 @@
 
 \begin{frame}
 \begin{center}
-{\Huge 1. audience, perspective and coverage }
+{\Huge <one> \\ [5pt]  audience, perspective, \\  [15pt] coverage }
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-{\Huge 2. speed }
+{\Huge <two> \\ [10pt] speed }
 \end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-{\Huge 3. richness, diversity }
+{\Huge <three> \\ [10pt] content richness }
 \end{center}
 \end{frame}
 
 %%  audience, perspective and coverage
-
-\begin{frame}
-\begin{center}
-{\Huge many publishers: audience, perspective and coverage }
-\end{center}
-\end{frame}
+%
+%\begin{frame}
+%\begin{center}
+%{\Huge many publishers: audience, perspective and coverage }
+%\end{center}
+%\end{frame}
 
 % volumes
 %wporgcom 760k
@@ -92,7 +92,7 @@
 \begin{table}
 \begin{tabular}{l|r}
 \hline
-   {Publisher}   &   {Daily Activity}   \\
+   {Publisher}   &   {Daily Activity}   \\ [1pt]
 \hline 
     Twitter      &      400M   \\
     Tumblr      &        75M   \\
@@ -103,6 +103,20 @@
 \hline
 \end{tabular}
 \end{table}
+\end{frame}
+
+\begin{frame}\frametitle{Gnip manages \dots}
+\Large{
+\begin{itemize}
+\item 4,600 Tweets/second \\ [2pt]
+\item 1/2M unique Tumblr users/hour \\  [2pt]
+\item PowerTrack filtering \\  [15pt]
+\item Delivering: \\
+\end{itemize}
+}
+\begin{center}
+\Huge{\emph{3B activities/day \\ 40k/second}}
+\end{center}
 \end{frame}
 
 % flooding
@@ -117,7 +131,7 @@
 
 \begin{frame}
 \begin{center}
-\center{\Huge {noise or signal?}}
+\center{\Huge {signal or noise?}}
 \end{center}
 \end{frame}
 
@@ -129,11 +143,11 @@
   \end{center}
 \end{frame}
 
-\begin{frame}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/fake_fit.pdf}
-  \end{center}
-\end{frame}
+%\begin{frame}
+%  \begin{center}
+%    \includegraphics[width=8cm]{./imgs/fake_fit.pdf}
+%  \end{center}
+%\end{frame}
 
 \begin{frame}
   \begin{center}
@@ -141,11 +155,11 @@
   \end{center}
 \end{frame}
 
-\begin{frame}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/real.pdf}
-  \end{center}
-\end{frame}
+%\begin{frame}
+%  \begin{center}
+%    \includegraphics[width=8cm]{./imgs/real.pdf}
+%  \end{center}
+%\end{frame}
 
 \begin{frame}
   \begin{center}
@@ -157,8 +171,46 @@
 
 \begin{frame}
 \begin{center}
-{\Huge realtime firehose: speed}
+{\Huge <speed> \\ [10pt]  how does the story unfold?}
 \end{center}
+\end{frame}
+
+% expectec vs unexpected events
+
+\begin{frame}
+\begin{center}
+{\Huge Expected: Hurricane}
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=8cm]{./imgs/hurricane.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=8cm]{./imgs/hurricane_trend.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+{\Huge Unexpected: Earthquake}
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=8cm]{./imgs/va_quake.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=8cm]{./imgs/va_quake_fit1.pdf}
+  \end{center}
 \end{frame}
 
 % Events
@@ -170,30 +222,14 @@
 Type & Response & Examples \\ \hline
 Expected    & Approx. \newline Symmetric & Hurricane Sandy \newline Olympics \\ \hline
 Unexpected (many obs.) & Social Media \newline Pulse & Beyonce' VMAs \newline  Mexico earthquake \newline  Steve Jobs \\ \hline
-Unexpected (spread) & Sigmoid \newline Pulse & Osama Bin Laden \newline  Whitney Houston \newline  Syrian dissidents \\ \hline
+Unexpected (spread) & Network \newline Models & Osama Bin Laden \newline  Whitney Houston \newline  Syrian dissidents \\ \hline
 \end{tabular}
 \end{table}
 \end{frame}
 
-
-% expectec vs unexpected events
-
-\begin{frame}
-\begin{center}
-{\Huge Expected: Hurricane}
-\end{center}
-\end{frame}
-
-
-\begin{frame}
-\begin{center}
-{\Huge Unexpected: Earthquake}
-\end{center}
-\end{frame}
-
 % half life
 
-\begin{frame}\frametitle{Half-life}
+\begin{frame}\frametitle{Social Media Pulse Half-life}
 \begin{center}
 {\Huge time to observe \\[6pt] $\frac{1}{2}$ of the activities \\[6pt] for an event}
 \end{center}
@@ -201,13 +237,13 @@ Unexpected (spread) & Sigmoid \newline Pulse & Osama Bin Laden \newline  Whitney
 
 \begin{frame}
 \frametitle{Social media pulse} 
-Given an event, the probability of a activity from one person,
+Probability of an activity from one person,
 
 \begin{equation*}
 f(t) = \lambda \exp(-\lambda t), \text{ for } t \geq 0.
 \end{equation*}
 
-Many people posting, so sum of random variables $S = X_1 + X_2 + \ldots + X_{n \text{ posters}}$.
+Many people, so sum random variables $S = X_1 + \ldots + X_{n}$.
 
 Probability distribution function,
 
@@ -215,11 +251,27 @@ Probability distribution function,
 f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\alpha)}
 \end{equation*}
 
-Cumulative distribution is the ``generalized regularized incomplete gamma function'',
+%Cumulative distribution is the ``generalized regularized incomplete gamma function'',
+%
+%\begin{equation*}
+%F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
+%\end{equation*}
+\end{frame}
 
-\begin{equation*}
-F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
-\end{equation*}
+\begin{frame}\frametitle{Why?}
+\begin{itemize}
+\Large{
+\item predict total story volume shortly after peak
+\item identify when the story is evolving due to external influences
+}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=8cm]{./imgs/va_quake_fit1.pdf}
+  \end{center}
 \end{frame}
 
 % gamma plots
@@ -289,7 +341,7 @@ F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
   \begin{center}
   \Large{Thank you!  \\ [20pt]}
     \includegraphics[width=3cm]{./imgs/logo.png} \\ [15pt]
-   \Large{Presentation, data, code at: github.com/DrSkippy27/SMS2013 }
+   \Large{Presentation, data, code at: github.com/DrSkippy27/SBS2013 }
   \end{center}
 \end{frame}
 
