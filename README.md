@@ -1,7 +1,8 @@
-SMS2012
+SBS2012
 ==========
 
-Presentation from  Social Media Summit, Austin, TX
+Presentation from  Social Business Summit, Austin, TX
+Data Driven Social Marketing
 
 Requires beamer
 
