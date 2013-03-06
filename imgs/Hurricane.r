@@ -34,7 +34,7 @@ pdf("hurricane_trend.pdf", height=4)
     ggplot(Y) + 
     geom_point(aes(dates,Hurricane), size=1, color=grn) +
     geom_smooth(aes(index(X),coredata(X)), size=2, color=reds, alpha=0.7) +
-    ylab("Twitter \"quake\" Activity") +
+    ylab("Twitter \"hurricane\" Activity") +
     xlab("August 2011") + 
         theme(
                 panel.background = element_rect(fill = bg),

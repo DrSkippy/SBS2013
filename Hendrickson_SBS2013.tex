@@ -12,7 +12,7 @@
 \usepackage[group-separator={,}]{siunitx}
 %\usepackage{fontspec}
 \setbeamertemplate{footline}[text line]{
-    \colorbox{white}{\parbox[22px]{\paperwidth} {\color{linecolour} {\line(1,0){500} \\ \hfill Gnip Inc.   @DrSkippy27}}}
+    \colorbox{white}{\parbox[22px]{\paperwidth} {\color{linecolour} {\line(1,0){500} \\ \hfill @gnip @DrSkippy27}}}
 }
 
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
@@ -21,8 +21,8 @@
 \usepackage{tikz}
 
 \begin{document}
-\title{Social Media Cocktail}  
-\author{Scott Hendrickson \\ Data Scientist, Gnip Inc.\\ @DrSkippy27}
+\title{The Social Cocktail}  
+\author{Scott Hendrickson \\ Data Scientist, Gnip\\ [10pt] @gnip \\ @DrSkippy27}
 \date{\today} 
 
 % title
@@ -43,7 +43,7 @@
 
 \begin{frame}
 \begin{center}
-\Huge social data has unlimited value and near limitless application
+\Huge Social data has unlimited value and near limitless application
 \end{center}
 \end{frame}
 
@@ -59,7 +59,7 @@
 
 \begin{frame}
 \begin{center}
-{\Huge why mix \\ [5pt] social media \\ [15pt] data? }
+{\Huge Why mix \\ [5pt] social  \\ [15pt] data? }
 \end{center}
 \end{frame}
 
@@ -67,7 +67,7 @@
 
 \begin{frame}
 \begin{center}
-{\Huge <one> \\ [5pt]  audience, perspective, \\  [15pt] coverage }
+{\Huge <One> \\ [5pt]  Audience, perspective, \\  [15pt] coverage }
 \end{center}
 \end{frame}
 
@@ -81,8 +81,8 @@
 \hline 
     Twitter      &      400M   \\
     Tumblr      &        75M   \\
-    Wordpress Posts &     615k   \\
-    Wordpress Comments & 1.1M \\
+    WordPress Posts &     615k   \\
+    WordPress Comments & 1.1M \\
     Disqus       &       1.3M  \\
     Engagement (likes, votes) & 2.4M  \\
 \hline
@@ -94,7 +94,7 @@
 \Large{
 \begin{itemize}
 \item 4,600 Tweets/second \\ [2pt]
-\item 1/2M unique Tumblr users/hour \\  [2pt]
+\item 1/2 M unique Tumblr Users/hour \\  [2pt]
 \item PowerTrack filtering on data and metadata, PowerTrack Replay, Historical\ldots \\  [15pt]
 \end{itemize}
 }
@@ -108,67 +108,67 @@
 
 \begin{frame}
 \begin{center}
-\center{\Huge {signal or noise?}}
+\center{\Huge {Signal or noise?}}
 \end{center}
 \end{frame}
 
 % chelsea con-ed example
+%
+%\begin{frame}\frametitle{Con Edison Chelsea}
+%  \begin{center}
+%    \includegraphics[width=11cm]{./imgs/fake.pdf}
+%  \end{center}
+%\end{frame}
 
-\begin{frame}
+\begin{frame}\frametitle{Con Edison Chelsea}
   \begin{center}
-    \includegraphics[width=8cm]{./imgs/fake.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/fake_fit2.pdf}
+    \includegraphics[width=11cm]{./imgs/fake_fit2.pdf}
   \end{center}
 \end{frame}
 
 %\begin{frame}
 %  \begin{center}
-%    \includegraphics[width=8cm]{./imgs/real.pdf}
+%    \includegraphics[width=11cm]{./imgs/real.pdf}
 %  \end{center}
 %\end{frame}
-
-\begin{frame}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/real_fit.pdf}
-  \end{center}
-\end{frame}
+%
+%\begin{frame}\frametitle{Con Edison Chelsea}
+%  \begin{center}
+%    \includegraphics[width=11cm]{./imgs/real_fit.pdf}
+%  \end{center}
+%\end{frame}
 
 % speed
 
 \begin{frame}
 \begin{center}
-{\Huge <two> \\ [10pt] timing, evolution}
+{\Huge <Two> \\ [10pt] Timing, evolution}
 \end{center}
 \end{frame}
 
 % expected vs unexpected events
+%
+%\begin{frame}\frametitle{Expected: Hurricane}
+%  \begin{center}
+%    \includegraphics[width=11cm]{./imgs/hurricane.pdf}
+%  \end{center}
+%\end{frame}
 
 \begin{frame}\frametitle{Expected: Hurricane}
   \begin{center}
-    \includegraphics[width=8cm]{./imgs/hurricane.pdf}
+    \includegraphics[width=11cm]{./imgs/hurricane_trend.pdf}
   \end{center}
 \end{frame}
-
-\begin{frame}\frametitle{Expected: Hurricane}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/hurricane_trend.pdf}
-  \end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Unexpected: Earthquake}
-  \begin{center}
-    \includegraphics[width=8cm]{./imgs/va_quake.pdf}
-  \end{center}
-\end{frame}
+%
+%\begin{frame}\frametitle{Unexpected: Earthquake}
+%  \begin{center}
+%    \includegraphics[width=11cm]{./imgs/va_quake.pdf}
+%  \end{center}
+%\end{frame}
 
 \begin{frame}\frametitle{Unexpected: Earthquake}
   \begin{center}
-    \includegraphics[width=8cm]{./imgs/va_quake_fit1.pdf}
+    \includegraphics[width=11cm]{./imgs/va_quake_fit1.pdf}
   \end{center}
 \end{frame}
 
@@ -180,8 +180,8 @@
 \hline
 Type & Response & Examples \\ \hline
 Expected    & Approx. \newline Symmetric & Hurricane Sandy \newline Olympics \\ \hline
-Unexpected (many obs.) & Social Media \newline Pulse & Beyonce' VMAs \newline  Mexico earthquake \newline  Steve Jobs \\ \hline
-Unexpected (spread) & Network \newline Models & Osama Bin Laden \newline  Whitney Houston \newline  Syrian dissidents \\ \hline
+Unexpected (many obs.) & Social Media \newline Pulse & Beyonc\'{e} VMAs \newline  Mexico earthquake \newline  Steve Jobs \\ \hline
+Unexpected (spread) & Network \newline Models & Osama bin Laden \newline  Whitney Houston \newline  Syrian dissidents \\ \hline
 \end{tabular}
 \end{table}
 \end{frame}
@@ -196,15 +196,11 @@ Unexpected (spread) & Network \newline Models & Osama Bin Laden \newline  Whitne
 
 \begin{frame}
 \frametitle{Social media pulse} 
-Probability of an activity from one person,
-
+\Large{Probability of an activity from one person,
 \begin{equation*}
 f(t) = \lambda \exp(-\lambda t), \text{ for } t \geq 0.
 \end{equation*}
-
-Many people, so sum random variables $S = X_1 + \ldots + X_{n}$.
-
-Probability distribution function,
+Sum random variables $S = X_1 + \ldots + X_{n}$ gives probability distribution (PDF),
 
 \begin{equation*}
 f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\alpha)}
@@ -215,6 +211,7 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
 %\begin{equation*}
 %F_S(t) = Q(\alpha, 0, \frac{ t}{\beta})
 %\end{equation*}
+}
 \end{frame}
 
 % gamma plots
@@ -253,11 +250,11 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
    {Publisher}   &   {Speed} \\
 \hline 
     Twitter      &    Fast  \\ 
-    Tumblr      &        Fast and Slow \\
-    Wordpress Posts &   Fast and Medium   \\
-    Wordpress Comments & Fast\\
-    Disqus       &    Fast\\
-    Engagement (likes, votes) &  Fast\\
+    Tumblr      &        Medium \\
+    WordPress Posts &   Deliberate   \\
+    WordPress Comments & Medium\\
+    Disqus       &    Medium\\
+    Engagement (likes, votes) &  Medium\\
 \hline
 \end{tabular}
 \end{table}
@@ -267,7 +264,7 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
 
 \begin{frame}
   \begin{center}
-    \includegraphics[height=8.5cm]{./imgs/JPMorgan.pdf}
+    \includegraphics[height=9.0cm]{./imgs/JPMorgan.pdf}
   \end{center}
 \end{frame}
 
@@ -275,23 +272,23 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
 
 \begin{frame}
 \begin{center}
-{\Huge <three> \\ [10pt] content richness }
+{\Huge <Three> \\ [10pt] Content richness }
 \end{center}
 \end{frame}
 
 
 \begin{frame} \frametitle{Speed and Richness}
 \begin{table}
-\begin{tabular}{m{2cm}| c |m{3cm}}
+\begin{tabular}{p{2.2cm}| c |p{5cm}}
 \hline
-   {Publisher}   &   {Speed} & {Richness} \\
+   {Publisher}   &   {Speed} & {Richness} \\ [3pt]
 \hline 
-    Twitter       & Fast & Concise  \\ [3pt]
-    Tumblr       & Fast, Slow & Rich, multimedia\\  [3pt]
-    Wordpress Posts & Fast, Medium &  Rich, text\\  [3pt]
-    Wordpress Comments  & Fast & Reactive, small-to-medium\\  [3pt]
-    Disqus         & Fast & Reactive, small-to-medium\\  [3pt]
-    Engagement   & Fast & Terse\\ 
+    Twitter       & Fast & Concise text, links \\ [3pt]
+    Tumblr       & Medium & Multimedia, text, reblogging\\  [3pt]
+    WordPress  & Deliberate &  Rich text, multimedia\\  [3pt]
+    Comments  & Medium & Small, medium text, threading\\  [3pt]
+%    Disqus Comments        & Medium & Small, medium text threading\\  [3pt]
+    Engagement and Votes   & Medium & Specific values\\ 
 \hline
 \end{tabular}
 \end{table}
@@ -301,7 +298,7 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
 
 \begin{frame}\frametitle{Social Cocktail}
   \begin{center}
-    \includegraphics[width=7cm]{./imgs/socialcocktailgrid.png}
+    \includegraphics[width=10cm]{./imgs/socialcocktailgrid.png}
   \end{center}
 \end{frame}
 
@@ -311,7 +308,7 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
   \begin{center}
   \Large{Thank you!  \\ [20pt]}
     \includegraphics[width=3cm]{./imgs/logo.png} \\ [15pt]
-   \Large{Presentation, data, code at: github.com/DrSkippy27/SBS2013 }
+   \Large{Follow us @gnip \\ [10pt] Presentation at: github.com/DrSkippy27/SBS2013 }
   \end{center}
 \end{frame}
 
