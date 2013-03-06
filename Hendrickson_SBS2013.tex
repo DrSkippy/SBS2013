@@ -1,16 +1,12 @@
 % SBS2013 Presentation
-%
 % Scott Hendrickson
 % @DrSkippy27
-% Gnip Inc
-% 
+% Gnip Inc 
 
 \documentclass{beamer}
 \setbeamertemplate{navigation symbols}{}
 
 % THEMES
-%\usetheme{Bergen}
-%\usetheme{Singapore}
 \usetheme{gnip}
 
 \usepackage[group-separator={,}]{siunitx}
@@ -26,7 +22,7 @@
 
 \begin{document}
 \title{Social Media Cocktail}  
-\author{Scott Hendrickson \\ Data Scientist  \\ Gnip Inc.\\ @DrSkippy27}
+\author{Scott Hendrickson \\ Data Scientist, Gnip Inc.\\ @DrSkippy27}
 \date{\today} 
 
 % title
@@ -37,19 +33,37 @@
 
 % staging the question
 
-\begin{frame}
-\begin{center}
-{\Huge getting the right mix \\ [5pt] for data-driven \\ [15pt] social marketing}
-\end{center}
-\end{frame}
+%\begin{frame}
+%\begin{center}
+%{\Huge getting the right mix \\ [5pt] for data-driven \\ [15pt] social marketing}
+%\end{center}
+%\end{frame}
+
+% we believe
 
 \begin{frame}
 \begin{center}
-{\Huge why mix \\ [5pt] social media data? }
+\Huge social data has unlimited value and near limitless application
 \end{center}
 \end{frame}
 
-% "accelerating the aha moment"
+% we believe
+%
+%\begin{frame}
+%\begin{center}
+%\Huge the source of record \\ for all public social conversation
+%\end{center}
+%\end{frame}
+
+%  Why
+
+\begin{frame}
+\begin{center}
+{\Huge why mix \\ [5pt] social media \\ [15pt] data? }
+\end{center}
+\end{frame}
+
+% audience and perspective
 
 \begin{frame}
 \begin{center}
@@ -57,38 +71,9 @@
 \end{center}
 \end{frame}
 
-\begin{frame}
-\begin{center}
-{\Huge <two> \\ [10pt] speed }
-\end{center}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-{\Huge <three> \\ [10pt] content richness }
-\end{center}
-\end{frame}
-
-%%  audience, perspective and coverage
-%
-%\begin{frame}
-%\begin{center}
-%{\Huge many publishers: audience, perspective and coverage }
-%\end{center}
-%\end{frame}
-
 % volumes
-%wporgcom 760k
-%wporg 300k
-%wpcomcom 260k
-%wpcom 315k
-%idebate 108k
-%wp likes 181k
-%disqus com 1.28M
-%disqus votes 2.25M
-%disqus post votes 109k
 
-\begin{frame} 
+\begin{frame} \frametitle{Audience -- Volume}
 \begin{table}
 \begin{tabular}{l|r}
 \hline
@@ -105,27 +90,19 @@
 \end{table}
 \end{frame}
 
-\begin{frame}\frametitle{Gnip manages \dots}
+\begin{frame}\frametitle{Gnip}
 \Large{
 \begin{itemize}
 \item 4,600 Tweets/second \\ [2pt]
 \item 1/2M unique Tumblr users/hour \\  [2pt]
-\item PowerTrack filtering \\  [15pt]
-\item Delivering: \\
+\item PowerTrack filtering on data and metadata, PowerTrack Replay, Historical\ldots \\  [15pt]
 \end{itemize}
 }
 \begin{center}
-\Huge{\emph{3B activities/day \\ 40k/second}}
+% 40K/second
+\Huge{\emph{3B+ activities/day}}
 \end{center}
 \end{frame}
-
-% flooding
-
-%\begin{frame}
-%  \begin{center}
-%    \includegraphics[width=7cm]{./imgs/flooding.png}
-%  \end{center}
-%\end{frame}
 
 % signal vs. noise
 
@@ -142,12 +119,6 @@
     \includegraphics[width=8cm]{./imgs/fake.pdf}
   \end{center}
 \end{frame}
-
-%\begin{frame}
-%  \begin{center}
-%    \includegraphics[width=8cm]{./imgs/fake_fit.pdf}
-%  \end{center}
-%\end{frame}
 
 \begin{frame}
   \begin{center}
@@ -171,43 +142,31 @@
 
 \begin{frame}
 \begin{center}
-{\Huge <speed> \\ [10pt]  how does the story unfold?}
+{\Huge <two> \\ [10pt] timing, evolution}
 \end{center}
 \end{frame}
 
-% expectec vs unexpected events
+% expected vs unexpected events
 
-\begin{frame}
-\begin{center}
-{\Huge Expected: Hurricane}
-\end{center}
-\end{frame}
-
-\begin{frame}
+\begin{frame}\frametitle{Expected: Hurricane}
   \begin{center}
     \includegraphics[width=8cm]{./imgs/hurricane.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}\frametitle{Expected: Hurricane}
   \begin{center}
     \includegraphics[width=8cm]{./imgs/hurricane_trend.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}
-\begin{center}
-{\Huge Unexpected: Earthquake}
-\end{center}
-\end{frame}
-
-\begin{frame}
+\begin{frame}\frametitle{Unexpected: Earthquake}
   \begin{center}
     \includegraphics[width=8cm]{./imgs/va_quake.pdf}
   \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}\frametitle{Unexpected: Earthquake}
   \begin{center}
     \includegraphics[width=8cm]{./imgs/va_quake_fit1.pdf}
   \end{center}
@@ -215,7 +174,7 @@
 
 % Events
 
-\begin{frame}\frametitle{Events}
+\begin{frame}\frametitle{Classifying Events}
 \begin{table}
 \begin{tabular}{ m{2cm} | m{ 2.5cm} | m{4cm}}
 \hline
@@ -231,7 +190,7 @@ Unexpected (spread) & Network \newline Models & Osama Bin Laden \newline  Whitne
 
 \begin{frame}\frametitle{Social Media Pulse Half-life}
 \begin{center}
-{\Huge time to observe \\[6pt] $\frac{1}{2}$ of the activities \\[6pt] for an event}
+{\Huge time to observe \\[10pt] half of the activities}
 \end{center}
 \end{frame}
 
@@ -258,13 +217,24 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
 %\end{equation*}
 \end{frame}
 
-\begin{frame}\frametitle{Why?}
+% gamma plots
+%\begin{frame}
+%  \begin{center}
+%   \includegraphics[height=6cm]{./imgs/gammadist.pdf}
+%  \end{center}
+%\end{frame}
+
+
+\begin{frame}\frametitle{Why model half-life?}
+\begin{center}
 \begin{itemize}
-\Large{
-\item predict total story volume shortly after peak
-\item identify when the story is evolving due to external influences
+\Huge{
+\item predict total story volume
+\item compare half-lives
+\item anomalous story evolution
 }
 \end{itemize}
+\end{center}
 \end{frame}
 
 
@@ -274,15 +244,9 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
   \end{center}
 \end{frame}
 
-% gamma plots
 
-\begin{frame}
-  \begin{center}
-   \includegraphics[height=6cm]{./imgs/gammadist.pdf}
-  \end{center}
-\end{frame}
 
-\begin{frame} \frametitle{Publishers}
+\begin{frame} \frametitle{Story Timing}
 \begin{table}
 \begin{tabular}{l|c}
 \hline
@@ -307,8 +271,14 @@ f_S(t) = \frac{ \beta^{-\alpha} t^{\alpha-1} \exp( \frac{-t}{\beta}) } {\Gamma(\
   \end{center}
 \end{frame}
 
-
 %%  richness
+
+\begin{frame}
+\begin{center}
+{\Huge <three> \\ [10pt] content richness }
+\end{center}
+\end{frame}
+
 
 \begin{frame} \frametitle{Speed and Richness}
 \begin{table}
